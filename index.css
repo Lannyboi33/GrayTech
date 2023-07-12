@@ -96,4 +96,45 @@ header {
     background-image: url("videos/matrix_background.gif");
     background-size: cover;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    height: 125px;
+    text-align: center;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 40px;
+    color: white;
+}
+
+.banner-text-box > h1 {
+    font-size: 42px;
+    font-weight: 400;
+    font-family: lato;
+}
+
+.banner-text-box > p {
+    font-size: 32px;
+    font-family: Allan;
+}
+
+.lang-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.lang-box > img {
+    width: 100px;
+    height: 100px;
 }
