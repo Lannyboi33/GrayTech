@@ -1,0 +1,99 @@
+/* Pre-styling */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: lato;
+    background-color: #36454F;
+}
+
+/* Nav */
+
+nav {
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grayTech-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.hamburger-icon {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+    display: none;
+    background-color: #36454F;
+    border: 2px solid white;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    right: -234px;
+    top: 100px;
+}
+
+.nav-item {
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 90%;
+  height: 2px;
+  background-color: white;
+}
+
+.selected-page {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hamburger slide-in */
+
+.hamburger-menu.active {
+    animation: slide-in;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-in {
+    100% {
+        right: 0px;
+    }
+}
+
+/* Header */
+
+header {
+    background-image: url("videos/matrix_background.gif");
+    background-size: cover;
+    height: 400px;
+}
