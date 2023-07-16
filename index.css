@@ -6,6 +6,7 @@
 }
 
 html, body {
+    color: white;
     font-family: lato;
     background-color: #36454F;
 }
@@ -96,41 +97,69 @@ header {
     background-image: url("videos/matrix_background.gif");
     background-size: cover;
     height: 400px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-
-.banner-text-box {
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 1em 2em;
-    border-radius: 10px;
 }
 
-.banner-text-box > p {
+.banner-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    height: 125px;
     text-align: center;
-    font-family: Allan;
-    font-size: 32px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 40px;
+    color: white;
 }
 
 .banner-text-box > h1 {
-    font-family: Lato;
-    font-weight: 300;
     font-size: 42px;
+    font-weight: 400;
+    font-family: lato;
+}
+
+.banner-text-box > p {
+    font-size: 32px;
+    font-family: Allan;
 }
 
 .lang-box {
-    width: 100%;
-    max-width: 1000px;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     margin-bottom: 40px;
 }
 
 .lang-box > img {
     width: 100px;
     height: 100px;
+}
+
+/* Front-end */
+
+.front-end {
+    margin-top: 40px;
+    padding: 0px 10px;
+}
+
+.front-end > h2 {
+    font-size: 42px;
+    font-family: Allan;
+    font-weight: 400;
+}
+
+.front-end-text {
+    margin: 10px 0px;
+}
+
+.computer_cat {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 300px;
+    height: 320px;
 }
